@@ -26,7 +26,7 @@ button {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-page .container {
+.header-container {
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -55,6 +55,7 @@ button {
 
 .nav-list {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 .nav-item {
@@ -77,6 +78,7 @@ button {
 .address-list {
   font-style: normal;
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 
@@ -196,6 +198,7 @@ button {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
+  border-radius: 0 0 4px 4px;
   width: calc((100% - 72px) / 4);
 }
 
