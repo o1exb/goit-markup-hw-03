@@ -16,11 +16,29 @@ button {
   cursor: pointer;
 }
 
+.advantages,
+.team,
+.portfolio {
+  padding: 120px 0;
+}
 /* #region header */
 .header-page {
+  border-bottom: 1px solid #e7e9fc;
 }
+
+.header-page .container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
 .nav-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
 }
+
 .logo-header {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -32,9 +50,12 @@ button {
 }
 .logo-style {
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .nav-list {
+  display: flex;
+  gap: 40px;
 }
 .nav-item {
 }
@@ -44,6 +65,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: block;
+  padding: 24px 0;
 }
 
 .nav-item-link:hover,
@@ -51,9 +74,12 @@ button {
   color: #404bbf;
 }
 
-.address {
+.address-list {
   font-style: normal;
+  display: flex;
+  gap: 40px;
 }
+
 .address-link {
   font-weight: 400;
   font-size: 16px;
@@ -72,6 +98,7 @@ button {
 /* #region hero */
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -79,9 +106,13 @@ button {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #fff;
+  width: 496px;
+  padding-top: 188px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
+
 .hero-btn {
   font-weight: 500;
   font-size: 16px;
@@ -89,6 +120,14 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  white-space: nowrap;
 }
 
 .hero-btn:hover,
@@ -98,20 +137,47 @@ button {
 /* #endregion hero */
 
 /* #region advantages */
-.advantages-title {
+
+.advantages {
+  padding: 120px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
-.advantages-text {
+.advantages-list-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.advantages-list-item {
+  width: calc((100% - 72px) / 4);
 }
 /* #endregion advantages */
 
@@ -125,7 +191,14 @@ button {
 
 .team-card {
   background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  width: calc((100% - 72px) / 4);
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -134,6 +207,12 @@ button {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-name {
@@ -142,6 +221,9 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-rank {
@@ -150,6 +232,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0 auto;
+  padding-bottom: 32px;
 }
 .team-title:hover {
 }
@@ -164,13 +248,21 @@ button {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
+
+.portfolio-iteam {
+  width: calc((100% - 48px) / 3);
+}
+
 .portfolio-mtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .portfolio-mtext {
@@ -179,12 +271,21 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
 }
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
 /* #endregion portfolio */
 
 /* #region footer */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .logo-footer {
@@ -195,6 +296,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .flogo-style {
   color: #f4f4fd;
@@ -206,5 +309,41 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
 }
 /* #endregion footer */
+
+/* FLEXBOX PART */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
