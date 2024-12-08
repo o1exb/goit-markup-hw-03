@@ -127,7 +127,7 @@ button {
   margin: 0 auto;
   border-radius: 4px;
   padding: 16px 32px;
-  min-width: 169px
+  min-width: 169px;
   height: 56px;
   white-space: nowrap;
 }
@@ -219,7 +219,7 @@ button {
 }
 
 .team-container {
-padding: 32px 0;
+  padding: 32px 0;
 }
 .team-name {
   font-weight: 500;
@@ -263,9 +263,9 @@ padding: 32px 0;
 }
 
 .portfolio-container {
-padding: 32px 16px;
-border: 1px solid #e7e9fc;
-border-top:none;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-mtitle {
